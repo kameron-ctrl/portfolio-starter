@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YES YOU KAM</title>
+    <script>
+      (function () {
+        const storageKey = "theme";
+        const savedTheme = localStorage.getItem(storageKey);
+        const preferredTheme =
+          savedTheme === "dark" || savedTheme === "light"
+            ? savedTheme
+            : window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+
+        document.documentElement.setAttribute("data-theme", preferredTheme);
+        document.documentElement.style.colorScheme = preferredTheme;
+      })();
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>

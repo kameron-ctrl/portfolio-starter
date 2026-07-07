@@ -31,9 +31,13 @@
   --color-link-hover: var(--cream);
   --color-button-bg: var(--rust);
   --color-button-text: var(--cream);
+  --color-surface: var(--bark-2);
+  --color-surface-alt: var(--forest-green);
+  --color-surface-hover: #3c342c;
   --font-main: 'Segoe UI', system-ui, sans-serif;
   --radius: 10px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  --shadow-soft: 0 4px 14px rgba(0, 0, 0, 0.18);
   --transition: 0.2s ease;
 }
 
@@ -50,7 +54,11 @@
   --color-link-hover: var(--forest-green);
   --color-button-bg: var(--rust);
   --color-button-text: var(--cream);
+  --color-surface: #ffffff;
+  --color-surface-alt: var(--cream-2);
+  --color-surface-hover: #ffffff;
   --shadow: 0 8px 22px rgba(38, 33, 28, 0.12);
+  --shadow-soft: 0 4px 14px rgba(38, 33, 28, 0.08);
 }
 
 /* ============================================================
@@ -64,6 +72,12 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--color-bg);
+  color-scheme: dark;
+}
+
+[data-theme="light"] html {
+  color-scheme: light;
 }
 
 body {
@@ -72,6 +86,13 @@ body {
   color: var(--color-text);
   line-height: 1.7;
   transition: background-color var(--transition), color var(--transition);
+}
+
+body {
+  background-image:
+    radial-gradient(circle at top left, rgba(216, 166, 87, 0.08), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(193, 102, 107, 0.08), transparent 24%);
+  background-attachment: fixed;
 }
 
 a {
@@ -95,9 +116,10 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: var(--color-bg);
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
   border-bottom: 1px solid var(--color-border);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
 }
 
 .nav-logo {
@@ -113,7 +135,7 @@ a:hover {
 }
 
 .nav-links a {
-  color: var(--color-text);
+  color: var(--color-link);
   font-weight: 500;
 }
 
@@ -134,7 +156,9 @@ a:hover {
   justify-content: center;
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(216, 166, 87, 0.14), transparent 20%),
+    linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
 }
 
 .hero-content {
@@ -169,7 +193,8 @@ a:hover {
   color: var(--color-button-text) !important;
   border-radius: var(--radius);
   font-weight: 600;
-  transition: background var(--transition), transform var(--transition);
+  transition: background var(--transition), transform var(--transition), color var(--transition), border-color var(--transition);
+  box-shadow: var(--shadow-soft);
 }
 
 .btn:hover {
@@ -184,7 +209,7 @@ a:hover {
 }
 
 .btn-outline:hover {
-  background: var(--color-bg-alt);
+  background: var(--color-surface);
   color: var(--color-text) !important;
 }
 
@@ -246,12 +271,13 @@ h2::after {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: var(--color-bg-alt);
+  background: var(--color-surface-alt);
   border: 3px solid var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  box-shadow: var(--shadow-soft);
 }
 
 /* ============================================================
@@ -264,7 +290,7 @@ h2::after {
 }
 
 .project-card {
-  background: var(--color-bg);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: 1.5rem;
@@ -274,13 +300,13 @@ h2::after {
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 .project-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: var(--color-text);
+  color: var(--color-heading);
 }
 
 .project-card p {
@@ -300,7 +326,7 @@ h2::after {
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.2rem 0.6rem;
-  background: var(--color-bg-alt);
+  background: var(--color-surface-alt);
   border: 1px solid var(--color-border);
   border-radius: 999px;
   color: var(--color-text-muted);
@@ -327,7 +353,7 @@ h2::after {
 
 .skill-badge {
   padding: 0.5rem 1rem;
-  background: var(--color-bg-alt);
+  background: var(--color-surface-alt);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   font-size: 0.9rem;
@@ -359,6 +385,12 @@ footer {
   color: var(--color-text-muted);
   font-size: 0.875rem;
   border-top: 1px solid var(--color-border);
+  background: color-mix(in srgb, var(--color-bg) 96%, transparent);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  color: var(--color-text);
 }
 
 /* ============================================================
