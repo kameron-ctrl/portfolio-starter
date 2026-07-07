@@ -117,31 +117,5 @@
     </footer>
 
     <script src="script.js"></script>
-      <script>
-        (function() {
-          const btn = document.getElementById('theme-toggle');
-          const storageKey = 'theme';
-
-          function applyTheme(theme) {
-            if (theme === 'dark') document.body.classList.add('dark');
-            else document.body.classList.remove('dark');
-            btn.textContent = theme === 'dark' ? '☀️' : '🌙';
-          }
-
-          const saved = localStorage.getItem(storageKey);
-          if (saved) applyTheme(saved);
-          else {
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            applyTheme(prefersDark ? 'dark' : 'light');
-          }
-
-          btn.addEventListener('click', () => {
-            const isDark = document.body.classList.toggle('dark');
-            const theme = isDark ? 'dark' : 'light';
-            localStorage.setItem(storageKey, theme);
-            btn.textContent = isDark ? '☀️' : '🌙';
-          });
-        })();
-      </script>
   </body>
 </html>

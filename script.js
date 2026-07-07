@@ -84,12 +84,39 @@ function renderSkills() {
 // Ask Copilot (inline chat on this function): "Implement dark mode
 // toggle that saves preference to localStorage"
 // ============================================================
+const themeStorageKey = "theme";
 
+function getPreferredTheme() {
+  const savedTheme = localStorage.getItem(themeStorageKey);
+  if (savedTheme === "dark" || savedTheme === "light") {
+    return savedTheme;
+  }
 
-// Initialize theme from localStorage
+  return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
+    themeToggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+  }
+}
+
 function initTheme() {
-  const savedTheme = localStorage.getItem("theme") || "light";
-  document.documentElement.setAttribute("data-theme", savedTheme);
+  applyTheme(getPreferredTheme());
+}
+
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+  const nextTheme = currentTheme === "dark" ? "light" : "dark";
+
+  applyTheme(nextTheme);
+  localStorage.setItem(themeStorageKey, nextTheme);
 }
 
 // ============================================================
@@ -106,16 +133,12 @@ function updateYear() {
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
   renderSkills();
+  initTheme();
   updateYear();
 
-  // TODO: Wire up your dark mode toggle button here once you add it
-  function toggleDarkMode() {
-  const html = document.documentElement;
-  const isDarkMode = html.getAttribute("data-theme") === "dark";
-  const newTheme = isDarkMode ? "light" : "dark";
-  
-  html.setAttribute("data-theme", newTheme);
-  localStorage.setItem("theme", newTheme);
-}
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleTheme);
+  }
 
 });

@@ -16,9 +16,16 @@
   --transition: 0.2s ease;
 }
 
-/* TODO: Add a [data-theme="dark"] block here for dark mode.
-   Copilot can generate this for you — try:
-   "Add a dark mode theme using CSS custom properties" */
+[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-bg-alt: #111c33;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-accent: #8b5cf6;
+  --color-accent-hover: #a78bfa;
+  --color-border: #24324d;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
 
 /* ============================================================
    RESET & BASE
@@ -38,6 +45,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
+  transition: background-color var(--transition), color var(--transition);
 }
 
 a {
