@@ -84,8 +84,12 @@ function renderSkills() {
 // Ask Copilot (inline chat on this function): "Implement dark mode
 // toggle that saves preference to localStorage"
 // ============================================================
-function toggleDarkMode() {
-  // Your implementation here
+
+
+// Initialize theme from localStorage
+function initTheme() {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  document.documentElement.setAttribute("data-theme", savedTheme);
 }
 
 // ============================================================
@@ -105,4 +109,13 @@ document.addEventListener("DOMContentLoaded", () => {
   updateYear();
 
   // TODO: Wire up your dark mode toggle button here once you add it
+  function toggleDarkMode() {
+  const html = document.documentElement;
+  const isDarkMode = html.getAttribute("data-theme") === "dark";
+  const newTheme = isDarkMode ? "light" : "dark";
+  
+  html.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+}
+
 });
