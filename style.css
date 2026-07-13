@@ -830,6 +830,99 @@ h2::after {
 }
 
 /* ============================================================
+   CONTRIBUTION GARDEN — GitHub activity as growing plants
+   Each contribution-graph day renders as a soil tile with a plant
+   sprite; growth stage (bare soil → bloom) maps to GitHub's own
+   0-4 contribution level for that day.
+   ============================================================ */
+.commit-garden-section {
+  --cg-soil: color-mix(in srgb, var(--color-border) 55%, transparent);
+  --cg-sprout: var(--sage-green);
+  --cg-leaf: var(--moss-green);
+  --cg-moss: var(--forest-green);
+  --cg-bloom: var(--amber);
+}
+
+[data-theme="light"] .commit-garden-section {
+  --cg-soil: color-mix(in srgb, var(--color-border) 70%, transparent);
+  --cg-bloom: var(--rust-deep);
+}
+
+.commit-garden-intro {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  max-width: 46ch;
+}
+
+.commit-garden {
+  max-width: 100%;
+}
+
+.cg-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 4px;
+  overflow-x: auto;
+  padding: 0.25rem 0.25rem 0.75rem;
+}
+
+.cg-cell {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  background: var(--cg-soil);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cg-cell.empty {
+  background: transparent;
+}
+
+.cg-cell:not(.empty):hover {
+  transform: scale(1.35);
+  z-index: 1;
+}
+
+.cg-cell svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cg-cell.cg-level-sprout svg { stroke: var(--cg-sprout); }
+.cg-cell.cg-level-leaf svg { stroke: var(--cg-leaf); }
+.cg-cell.cg-level-moss svg { stroke: var(--cg-moss); }
+.cg-cell.cg-level-bloom svg { stroke: var(--cg-bloom); }
+
+.cg-status {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  padding: 0.75rem 0;
+}
+
+.cg-status a {
+  color: var(--color-link);
+}
+
+.cg-status a:hover {
+  color: var(--color-link-hover);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cg-cell {
+    transition: none;
+  }
+
+  .cg-cell:not(.empty):hover {
+    transform: none;
+  }
+}
+
+/* ============================================================
    SKILLS — vinyl record crate carousel
    ============================================================ */
 .skills-container {
@@ -1111,19 +1204,219 @@ h2::after {
 }
 
 /* ============================================================
-   CONTACT
+   CONTACT — "Let's Grow Something" garden ledger
+   Each link is a growth stage: Seed → Sprout → Bloom → Harvest.
    ============================================================ */
+.grow-contact {
+  --gc-leaf: #a3c585;
+  --gc-soil: var(--amber);
+  max-width: 760px;
+}
+
+[data-theme="light"] .grow-contact {
+  --gc-leaf: var(--moss-green);
+  --gc-soil: var(--rust-deep);
+}
+
 .contact-intro {
   color: var(--color-text-muted);
   margin-bottom: 2rem;
   font-size: 1.1rem;
-  max-width: 640px;
+  max-width: 46ch;
 }
 
-.contact-links {
+.gc-rows {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  border-top: 1px dashed var(--color-border);
+}
+
+.gc-row {
+  position: relative;
+  display: flex;
+  align-items: center;
   gap: 1rem;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px dashed var(--color-border);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: padding-left 0.25s ease, background-color 0.25s ease;
+}
+
+.gc-row:hover,
+.gc-row:focus-visible {
+  padding-left: 0.9rem;
+  background: color-mix(in srgb, var(--gc-leaf) 8%, transparent);
+  outline: none;
+}
+
+/* Vine underline that grows from the root on hover */
+.gc-row::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gc-soil), var(--gc-leaf));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gc-row:hover::after,
+.gc-row:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* Growth-stage label — typewriter type, seed-packet vibes */
+.gc-stage {
+  position: relative;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gc-soil);
+  width: 72px;
+  flex-shrink: 0;
+  transition: color 0.25s ease;
+}
+
+.gc-row:hover .gc-stage,
+.gc-row:focus-visible .gc-stage {
+  color: var(--gc-leaf);
+}
+
+/* Each stage blooms its emoji up out of the soil on hover */
+.gc-stage::before {
+  content: attr(data-bloom);
+  position: absolute;
+  left: 50%;
+  top: -0.25rem;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translate(-50%, 0) scale(0.4) rotate(-8deg);
+  pointer-events: none;
+}
+
+.gc-row:hover .gc-stage::before,
+.gc-row:focus-visible .gc-stage::before {
+  animation: gc-bloom 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes gc-bloom {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0.4rem) scale(0.4) rotate(-8deg);
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -1.6rem) scale(1.05) rotate(10deg);
+  }
+}
+
+/* Line-drawn plant icon: redraws itself, then sways in the breeze */
+.gc-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  stroke: var(--gc-leaf);
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  transform-origin: 50% 100%;
+}
+
+.gc-icon path,
+.gc-icon circle {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 0;
+}
+
+.gc-row:hover .gc-icon,
+.gc-row:focus-visible .gc-icon {
+  animation: gc-sway 2.2s ease-in-out 0.7s infinite;
+}
+
+.gc-row:hover .gc-icon path,
+.gc-row:hover .gc-icon circle,
+.gc-row:focus-visible .gc-icon path,
+.gc-row:focus-visible .gc-icon circle {
+  animation: gc-draw 0.7s ease-out;
+}
+
+@keyframes gc-draw {
+  from {
+    stroke-dashoffset: 48;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes gc-sway {
+  0%, 100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+.gc-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.gc-label {
+  display: block;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.25s ease;
+}
+
+.gc-row:hover .gc-label,
+.gc-row:focus-visible .gc-label {
+  color: var(--gc-leaf);
+}
+
+.gc-sub {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.gc-arrow {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease;
+}
+
+.gc-row:hover .gc-arrow,
+.gc-row:focus-visible .gc-arrow {
+  transform: translateX(6px);
+  color: var(--gc-leaf);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gc-row,
+  .gc-row::after,
+  .gc-arrow {
+    transition: none;
+  }
+
+  .gc-row:hover .gc-icon,
+  .gc-row:focus-visible .gc-icon,
+  .gc-row:hover .gc-icon path,
+  .gc-row:hover .gc-icon circle,
+  .gc-row:focus-visible .gc-icon path,
+  .gc-row:focus-visible .gc-icon circle,
+  .gc-row:hover .gc-stage::before,
+  .gc-row:focus-visible .gc-stage::before {
+    animation: none;
+  }
 }
 
 /* ============================================================
@@ -1216,13 +1509,17 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .contact-links {
-    flex-direction: column;
-    align-items: flex-start;
+  .gc-row {
+    gap: 0.75rem;
+    padding: 0.85rem 0.25rem;
   }
 
-  .contact-links .btn {
-    width: 100%;
-    text-align: center;
+  .gc-stage {
+    width: 56px;
+    font-size: 0.62rem;
+  }
+
+  .gc-sub {
+    font-size: 0.78rem;
   }
 }

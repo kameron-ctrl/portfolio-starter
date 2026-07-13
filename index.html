@@ -131,6 +131,20 @@
     </section>
 
     <!-- ============================================================
+         CONTRIBUTION GARDEN
+         Renders the GitHub contribution graph as growing plants.
+    ============================================================ -->
+    <section class="section commit-garden-section" id="contribution-garden">
+      <h2>Contribution Garden</h2>
+      <p class="commit-garden-intro">
+        Every commit is a seed. Here's what grew on GitHub this year.
+      </p>
+      <div class="commit-garden" id="commit-garden" data-username="kameron-ctrl">
+        <!-- Populated by commit-garden.js -->
+      </div>
+    </section>
+
+    <!-- ============================================================
          SKILLS
     ============================================================ -->
     <section class="section section-alt" id="skills">
@@ -145,20 +159,52 @@
     <!-- ============================================================
          CONTACT
     ============================================================ -->
-    <section class="section" id="contact">
-      <h2>Get In Touch</h2>
+    <section class="section grow-contact" id="contact">
+      <h2>Let's Grow Something</h2>
       <p class="contact-intro">
-        <!-- TODO: Update this message -->
-        I'm currently working on some exciting projects in open source and would love to connect! Feel free to reach out via email or connect with me on GitHub or LinkedIn.
+        I like to build things that help people grow, this page is no different.
+        Reach out however makes sense.
       </p>
-      <div class="contact-links">
-        <!-- TODO: Add your real links -->
-        <a href="kameron1.benjamin@famu.edu" class="btn">✉️ Email Me</a>
-        <a href="https://github.com/kameron-ctrl/" class="btn btn-outline" target="_blank">
-          GitHub
+
+      <div class="gc-rows">
+        <a class="gc-row" href="mailto:kameron1.benjamin@famu.edu">
+          <span class="gc-stage" data-bloom="🌱">Seed</span>
+          <svg class="gc-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v6M8 8c0 4 4 4 4 8M16 8c0 4-4 4-4 8"/></svg>
+          <span class="gc-text">
+            <span class="gc-label">Email Me</span>
+            <span class="gc-sub">kameron1.benjamin@famu.edu</span>
+          </span>
+          <span class="gc-arrow" aria-hidden="true">&rarr;</span>
         </a>
-        <a href="https://www.linkedin.com/in/kameronbenjamin/" class="btn btn-outline" target="_blank">
-          LinkedIn
+
+        <a class="gc-row" href="https://github.com/kameron-ctrl/" target="_blank" rel="noopener">
+          <span class="gc-stage" data-bloom="🌿">Sprout</span>
+          <svg class="gc-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V10M12 10C12 6 8 6 6 4M12 10c0-4 4-4 6-6"/></svg>
+          <span class="gc-text">
+            <span class="gc-label">GitHub</span>
+            <span class="gc-sub">Code, commits, and works in progress on GitHub</span>
+          </span>
+          <span class="gc-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="gc-row" href="https://www.linkedin.com/in/kameronbenjamin/" target="_blank" rel="noopener">
+          <span class="gc-stage" data-bloom="🌸">Bloom</span>
+          <svg class="gc-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M12 11v9M8 15c-2 0-3 1-3 3M16 15c2 0 3 1 3 3"/></svg>
+          <span class="gc-text">
+            <span class="gc-label">LinkedIn</span>
+            <span class="gc-sub">The professional side, on LinkedIn</span>
+          </span>
+          <span class="gc-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="gc-row" href="resume.pdf" target="_blank" rel="noopener">
+          <span class="gc-stage" data-bloom="🍂">Harvest</span>
+          <svg class="gc-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c8 0 12-6 12-14M6 12c4 0 6-2 6-6M4 20c2-6 4-8 8-10"/></svg>
+          <span class="gc-text">
+            <span class="gc-label">Resume</span>
+            <span class="gc-sub">Download my resume (PDF)</span>
+          </span>
+          <span class="gc-arrow" aria-hidden="true">&rarr;</span>
         </a>
       </div>
     </section>
@@ -169,5 +215,6 @@
 
     <script src="script.js"></script>
     <script src="sprout-wordle.js"></script>
+    <script src="commit-garden.js"></script>
   </body>
 </html>

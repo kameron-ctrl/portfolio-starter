@@ -1,0 +1,760 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - document
+  - navigation [ref=e2]:
+    - generic [ref=e3]: Kameron Benjamin
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "About" [ref=e6] [cursor=pointer]:
+          - /url: "#about"
+      - listitem [ref=e7]:
+        - link "Projects" [ref=e8] [cursor=pointer]:
+          - /url: "#projects"
+      - listitem [ref=e9]:
+        - link "Skills" [ref=e10] [cursor=pointer]:
+          - /url: "#skills"
+      - listitem [ref=e11]:
+        - link "Contact" [ref=e12] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e13]:
+      - switch "Toggle dark mode" [ref=e14] [cursor=pointer]
+      - generic [ref=e15]: Dark Mode
+  - generic [ref=e16]:
+    - img [ref=e17]
+    - generic [ref=e18]:
+      - heading "I'm Kameron Benjamin" [level=1] [ref=e19]
+      - paragraph [ref=e20]: Senior computer science student passionate about scratching that itch.
+      - link "See My Work" [ref=e21] [cursor=pointer]:
+        - /url: "#projects"
+  - generic [ref=e22]:
+    - heading "About Me" [level=2] [ref=e23]
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - paragraph [ref=e26]: I'm Kameron, a computer science student at Florida A&M University (Class of 2027) who likes to build things that help people grow, whether that's software, gardens, or communities.
+        - paragraph [ref=e27]: Right now, I'm contributing through the UCSC Open Source Contributor Catalyst Program and exploring work at the intersection of AI, full-stack development, and 3D visuals. When I'm away from the keyboard, you can usually find me dancing, playing sousaphone, tending my plants, homelabbing, or chasing down my next idea over a cup of tea.
+      - figure [ref=e29]:
+        - img "Kam 2" [ref=e30]
+  - generic [ref=e31]:
+    - heading "Kameron as of lately..." [level=2] [ref=e32]
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - img "Recently played on Apple Music"
+      - iframe [ref=e36]:
+        - article [ref=f1e2]:
+          - generic [ref=f1e3]:
+            - generic [ref=f1e5]:
+              - link "View profile for Kameron Benjamin" [ref=f1e6] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/kameronbenjamin?trk=public_post_embed_feed-actor-image
+                - img "View profile for Kameron Benjamin" [ref=f1e7]
+              - generic [ref=f1e8]:
+                - link "View profile for Kameron Benjamin" [ref=f1e10] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/kameronbenjamin?trk=public_post_embed_feed-actor-name
+                  - text: Kameron Benjamin
+                - paragraph [ref=f1e11]: CS @ Florida A&M University | Open Source Intern @ UCSC | Adobe Campus Ambassador | Colorstack Fellow
+                - time [ref=f1e13]:
+                  - text: 1w
+                  - generic [ref=f1e14]: ·
+                  - text: Edited
+            - link "LinkedIn" [ref=f1e16] [cursor=pointer]:
+              - /url: https://www.linkedin.com/feed/?trk=public_post_embed_linkedin-logo-image
+              - generic [ref=f1e17]: LinkedIn
+              - img [ref=f1e19]
+          - generic [ref=f1e30]:
+            - paragraph [ref=f1e31]:
+              - text: Last night, I gave a lightning talk at the inaugural
+              - link "PyTorch" [ref=f1e32] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/pytorch?trk=public_post_embed-text
+              - text: "Santa Cruz Meetup, presenting my project, Green Guardian, to a room full of engineers, researchers, and Ph.D. students at UC Santa Cruz. Green Guardian started as a personal problem. I'm an amateur gardener, and a busy one. I'd come home after days away to spotted, yellowing leaves with no idea what was wrong. So I built an app: a fine-tuned ResNet-18 that classifies 38 plant disease categories from a single photo, with a"
+              - link "Next.js" [ref=f1e33] [cursor=pointer]:
+                - /url: https://www.linkedin.com/safety/go?url=http%3A%2F%2FNext.js%3Ftrk%3Dpublic_post_embed-text
+              - text: "frontend and a FastAPI backend deployed on AWS. If there was one thing I wanted the room to walk away with, it's this: getting started with PyTorch is more approachable than it looks. Loading a pretrained model and fine-tuning it on your own data is a small amount of code. You don't need a research lab or years of experience to build something real; you just need a problem you actually care about. I'm at the"
+              - link "University of California, Santa Cruz" [ref=f1e34] [cursor=pointer]:
+                - /url: https://www.linkedin.com/school/ucsc/?trk=public_post_embed-text
+              - text: of California, Santa Cruz, this summer as part of the UCSC OSPO Contributor Catalyst program. Thank you to
+              - link "Emily Lovell" [ref=f1e35] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/emilymarielovell?trk=public_post_embed-text
+              - text: Lovell for putting me on the panel and for building a program that gets students like me into rooms like this. Shoutout to
+              - link "Steven Pousty, Ph.D." [ref=f1e36] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/thesteve0?trk=public_post_embed-text
+              - text: ", from Red Hat and"
+              - link "Stephanie Lieggi" [ref=f1e37] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/stephanie-lieggi-8542624?trk=public_post_embed-text
+              - text: Lieggi for organizing the event, and to
+              - link "Faradawn Yang" [ref=f1e38] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/faradawn?trk=public_post_embed-text
+              - text: (NVIDIA) and
+              - link "Anil Vishnoi" [ref=f1e39] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/vishnoianil?trk=public_post_embed-text
+              - text: "(Red Hat) for excellent talks earlier in the evening. Repo:"
+              - link "https://lnkd.in/eu3s2w5W" [ref=f1e40] [cursor=pointer]:
+                - /url: https://www.linkedin.com/redir/redirect?url=https%3A%2F%2Flnkd%2Ein%2Feu3s2w5W&urlhash=6-Hk&trk=public_post_embed-text
+              - text: Keep Growing🌱
+              - link "#PyTorch" [ref=f1e41] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/hashtag/pytorch?trk=public_post_embed-text
+              - link "#OpenSource" [ref=f1e42] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/hashtag/opensource?trk=public_post_embed-text
+              - link "#MachineLearning" [ref=f1e43] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/hashtag/machinelearning?trk=public_post_embed-text
+            - button [ref=f1e44] [cursor=pointer]: …more
+          - list [ref=f1e45]:
+            - listitem [ref=f1e46]:
+              - button "No alternative text description for this image" [ref=f1e47]:
+                - img "No alternative text description for this image" [ref=f1e48]
+            - listitem [ref=f1e49]:
+              - button "No alternative text description for this image" [ref=f1e50]:
+                - img "No alternative text description for this image" [ref=f1e51]
+            - listitem [ref=f1e52]:
+              - button "No alternative text description for this image" [ref=f1e53]:
+                - img "No alternative text description for this image" [ref=f1e54]
+            - listitem [ref=f1e55]:
+              - button "No alternative text description for this image" [ref=f1e56]:
+                - img "No alternative text description for this image" [ref=f1e57]
+            - listitem [ref=f1e58]:
+              - button "No alternative text description for this image" [ref=f1e59]:
+                - img "No alternative text description for this image" [ref=f1e60]
+          - generic [ref=f1e61]:
+            - link "61 Reactions" [ref=f1e62] [cursor=pointer]:
+              - /url: https://www.linkedin.com/feed/update/urn:li:activity:7478264301305196544?trk=public_post_embed_social-actions-reactions
+              - generic [ref=f1e63]: "61"
+            - link "10 Comments" [ref=f1e64] [cursor=pointer]:
+              - /url: https://www.linkedin.com/feed/update/urn:li:activity:7478264301305196544?trk=public_post_embed_social-actions-comments
+          - generic [ref=f1e65]:
+            - link "Like" [ref=f1e66] [cursor=pointer]:
+              - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Ffeed%2Fupdate%2Furn%3Ali%3Aactivity%3A7478264301305196544&trk=public_post_embed_like-cta
+              - img [ref=f1e68]
+              - generic [ref=f1e70]: Like
+            - link "Comment" [ref=f1e71] [cursor=pointer]:
+              - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Ffeed%2Fupdate%2Furn%3Ali%3Aactivity%3A7478264301305196544&trk=public_post_embed_comment-cta
+              - img [ref=f1e73]
+              - generic [ref=f1e75]: Comment
+            - button "Share" [ref=f1e78] [cursor=pointer]:
+              - img [ref=f1e80]
+              - generic [ref=f1e82]: Share
+      - generic [ref=e37]:
+        - generic [ref=e38]: Sprout Wordle — guess the word
+        - group "Guess grid" [ref=e39]
+        - group "On-screen keyboard" [ref=e76]:
+          - generic [ref=e77]:
+            - button "Q" [ref=e78] [cursor=pointer]
+            - button "W" [ref=e79] [cursor=pointer]
+            - button "E" [ref=e80] [cursor=pointer]
+            - button "R" [ref=e81] [cursor=pointer]
+            - button "T" [ref=e82] [cursor=pointer]
+            - button "Y" [ref=e83] [cursor=pointer]
+            - button "U" [ref=e84] [cursor=pointer]
+            - button "I" [ref=e85] [cursor=pointer]
+            - button "O" [ref=e86] [cursor=pointer]
+            - button "P" [ref=e87] [cursor=pointer]
+          - generic [ref=e88]:
+            - button "A" [ref=e89] [cursor=pointer]
+            - button "S" [ref=e90] [cursor=pointer]
+            - button "D" [ref=e91] [cursor=pointer]
+            - button "F" [ref=e92] [cursor=pointer]
+            - button "G" [ref=e93] [cursor=pointer]
+            - button "H" [ref=e94] [cursor=pointer]
+            - button "J" [ref=e95] [cursor=pointer]
+            - button "K" [ref=e96] [cursor=pointer]
+            - button "L" [ref=e97] [cursor=pointer]
+          - generic [ref=e98]:
+            - button "Enter" [ref=e99] [cursor=pointer]: ENTER
+            - button "Z" [ref=e100] [cursor=pointer]
+            - button "X" [ref=e101] [cursor=pointer]
+            - button "C" [ref=e102] [cursor=pointer]
+            - button "V" [ref=e103] [cursor=pointer]
+            - button "B" [ref=e104] [cursor=pointer]
+            - button "N" [ref=e105] [cursor=pointer]
+            - button "M" [ref=e106] [cursor=pointer]
+            - button "Backspace" [ref=e107] [cursor=pointer]: ⌫
+  - generic [ref=e108]:
+    - heading "Projects" [level=2] [ref=e109]
+    - generic [ref=e110]:
+      - article "CubeCoach" [ref=e111] [cursor=pointer]:
+        - generic:
+          - img "Screenshot of CubeCoach"
+          - heading "CubeCoach" [level=3] [ref=e112]
+        - generic [ref=e113]:
+          - heading "CubeCoach" [level=3] [ref=e114]
+          - paragraph [ref=e115]: A full-stack platform that teaches you to solve the Rubik's Cube step by step. It pairs an interactive Three.js 3D cube with Claude-powered coaching that adapts to your skill level, plus SM-2 spaced-repetition drills across all 57 OLL and 21 PLL cases. Cube move logic is verified against the kociemba solver (200/200 end-to-end tests).
+          - list [ref=e116]:
+            - listitem [ref=e117]: Interactive Three.js 3D cube with click-to-color input
+            - listitem [ref=e118]: Claude-powered step-by-step coaching adapted to skill level
+            - listitem [ref=e119]: SM-2 spaced repetition for every OLL & PLL algorithm
+          - generic [ref=e120]:
+            - generic [ref=e121]: Next.js
+            - generic [ref=e122]: TypeScript
+            - generic [ref=e123]: Three.js
+            - generic [ref=e124]: FastAPI
+            - generic [ref=e125]: Claude AI
+          - link "GitHub →" [ref=e127]:
+            - /url: https://github.com/kameron-ctrl/CubeCoach
+      - article "Green Guardian" [ref=e128] [cursor=pointer]:
+        - generic:
+          - img "Screenshot of Green Guardian"
+          - heading "Green Guardian" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - heading "Green Guardian" [level=3] [ref=e131]
+          - paragraph [ref=e132]: A full-stack web app that diagnoses plant diseases from leaf photographs using a custom-trained PyTorch (ResNet) model on the PlantVillage dataset. It classifies 15 conditions across tomato, potato, and bell pepper, returning real-time predictions with confidence scores and treatment recommendations. Deployed serverlessly on AWS Lambda + S3 + CloudFront with GitHub Actions CI/CD.
+          - list [ref=e133]:
+            - listitem [ref=e134]: Custom ResNet classifier across 15 disease classes
+            - listitem [ref=e135]: Confidence scoring plus treatment recommendations
+            - listitem [ref=e136]: Serverless AWS deploy (Lambda, S3, CloudFront) with CI/CD
+          - generic [ref=e137]:
+            - generic [ref=e138]: Next.js
+            - generic [ref=e139]: TypeScript
+            - generic [ref=e140]: PyTorch
+            - generic [ref=e141]: FastAPI
+            - generic [ref=e142]: AWS
+          - link "GitHub →" [ref=e144]:
+            - /url: https://github.com/kameron-ctrl/GreenGuardian
+  - generic [ref=e145]:
+    - heading "Contribution Garden" [level=2] [ref=e146]
+    - paragraph [ref=e147]: Every commit is a seed. Here's what grew on GitHub this year.
+    - generic [ref=e149]:
+      - generic "0 contributions on 2025-07-13" [ref=e150]
+      - generic "0 contributions on 2025-07-14" [ref=e151]
+      - generic "0 contributions on 2025-07-15" [ref=e152]
+      - generic "0 contributions on 2025-07-16" [ref=e153]
+      - generic "0 contributions on 2025-07-17" [ref=e154]
+      - generic "0 contributions on 2025-07-18" [ref=e155]
+      - generic "0 contributions on 2025-07-19" [ref=e156]
+      - generic "0 contributions on 2025-07-20" [ref=e157]
+      - generic "0 contributions on 2025-07-21" [ref=e158]
+      - generic "0 contributions on 2025-07-22" [ref=e159]
+      - generic "0 contributions on 2025-07-23" [ref=e160]
+      - generic "0 contributions on 2025-07-24" [ref=e161]
+      - generic "4 contributions on 2025-07-25" [ref=e162]:
+        - img [ref=e163]
+      - generic "3 contributions on 2025-07-26" [ref=e165]:
+        - img [ref=e166]
+      - generic "0 contributions on 2025-07-27" [ref=e167]
+      - generic "0 contributions on 2025-07-28" [ref=e168]
+      - generic "0 contributions on 2025-07-29" [ref=e169]
+      - generic "0 contributions on 2025-07-30" [ref=e170]
+      - generic "0 contributions on 2025-07-31" [ref=e171]
+      - generic "0 contributions on 2025-08-01" [ref=e172]
+      - generic "0 contributions on 2025-08-02" [ref=e173]
+      - generic "0 contributions on 2025-08-03" [ref=e174]
+      - generic "0 contributions on 2025-08-04" [ref=e175]
+      - generic "0 contributions on 2025-08-05" [ref=e176]
+      - generic "0 contributions on 2025-08-06" [ref=e177]
+      - generic "0 contributions on 2025-08-07" [ref=e178]
+      - generic "0 contributions on 2025-08-08" [ref=e179]
+      - generic "0 contributions on 2025-08-09" [ref=e180]
+      - generic "0 contributions on 2025-08-10" [ref=e181]
+      - generic "0 contributions on 2025-08-11" [ref=e182]
+      - generic "0 contributions on 2025-08-12" [ref=e183]
+      - generic "0 contributions on 2025-08-13" [ref=e184]
+      - generic "0 contributions on 2025-08-14" [ref=e185]
+      - generic "0 contributions on 2025-08-15" [ref=e186]
+      - generic "0 contributions on 2025-08-16" [ref=e187]
+      - generic "0 contributions on 2025-08-17" [ref=e188]
+      - generic "0 contributions on 2025-08-18" [ref=e189]
+      - generic "0 contributions on 2025-08-19" [ref=e190]
+      - generic "0 contributions on 2025-08-20" [ref=e191]
+      - generic "0 contributions on 2025-08-21" [ref=e192]
+      - generic "0 contributions on 2025-08-22" [ref=e193]
+      - generic "0 contributions on 2025-08-23" [ref=e194]
+      - generic "0 contributions on 2025-08-24" [ref=e195]
+      - generic "0 contributions on 2025-08-25" [ref=e196]
+      - generic "0 contributions on 2025-08-26" [ref=e197]
+      - generic "0 contributions on 2025-08-27" [ref=e198]
+      - generic "0 contributions on 2025-08-28" [ref=e199]
+      - generic "0 contributions on 2025-08-29" [ref=e200]
+      - generic "0 contributions on 2025-08-30" [ref=e201]
+      - generic "0 contributions on 2025-08-31" [ref=e202]
+      - generic "0 contributions on 2025-09-01" [ref=e203]
+      - generic "0 contributions on 2025-09-02" [ref=e204]
+      - generic "0 contributions on 2025-09-03" [ref=e205]
+      - generic "0 contributions on 2025-09-04" [ref=e206]
+      - generic "0 contributions on 2025-09-05" [ref=e207]
+      - generic "0 contributions on 2025-09-06" [ref=e208]
+      - generic "0 contributions on 2025-09-07" [ref=e209]
+      - generic "0 contributions on 2025-09-08" [ref=e210]
+      - generic "0 contributions on 2025-09-09" [ref=e211]
+      - generic "0 contributions on 2025-09-10" [ref=e212]
+      - generic "0 contributions on 2025-09-11" [ref=e213]
+      - generic "0 contributions on 2025-09-12" [ref=e214]
+      - generic "0 contributions on 2025-09-13" [ref=e215]
+      - generic "0 contributions on 2025-09-14" [ref=e216]
+      - generic "0 contributions on 2025-09-15" [ref=e217]
+      - generic "0 contributions on 2025-09-16" [ref=e218]
+      - generic "0 contributions on 2025-09-17" [ref=e219]
+      - generic "0 contributions on 2025-09-18" [ref=e220]
+      - generic "0 contributions on 2025-09-19" [ref=e221]
+      - generic "0 contributions on 2025-09-20" [ref=e222]
+      - generic "0 contributions on 2025-09-21" [ref=e223]
+      - generic "0 contributions on 2025-09-22" [ref=e224]
+      - generic "0 contributions on 2025-09-23" [ref=e225]
+      - generic "0 contributions on 2025-09-24" [ref=e226]
+      - generic "0 contributions on 2025-09-25" [ref=e227]
+      - generic "0 contributions on 2025-09-26" [ref=e228]
+      - generic "0 contributions on 2025-09-27" [ref=e229]
+      - generic "0 contributions on 2025-09-28" [ref=e230]
+      - generic "0 contributions on 2025-09-29" [ref=e231]
+      - generic "0 contributions on 2025-09-30" [ref=e232]
+      - generic "0 contributions on 2025-10-01" [ref=e233]
+      - generic "0 contributions on 2025-10-02" [ref=e234]
+      - generic "0 contributions on 2025-10-03" [ref=e235]
+      - generic "0 contributions on 2025-10-04" [ref=e236]
+      - generic "0 contributions on 2025-10-05" [ref=e237]
+      - generic "0 contributions on 2025-10-06" [ref=e238]
+      - generic "0 contributions on 2025-10-07" [ref=e239]
+      - generic "0 contributions on 2025-10-08" [ref=e240]
+      - generic "1 contribution on 2025-10-09" [ref=e241]:
+        - img [ref=e242]
+      - generic "1 contribution on 2025-10-10" [ref=e243]:
+        - img [ref=e244]
+      - generic "0 contributions on 2025-10-11" [ref=e245]
+      - generic "0 contributions on 2025-10-12" [ref=e246]
+      - generic "4 contributions on 2025-10-13" [ref=e247]:
+        - img [ref=e248]
+      - generic "0 contributions on 2025-10-14" [ref=e250]
+      - generic "1 contribution on 2025-10-15" [ref=e251]:
+        - img [ref=e252]
+      - generic "0 contributions on 2025-10-16" [ref=e253]
+      - generic "0 contributions on 2025-10-17" [ref=e254]
+      - generic "0 contributions on 2025-10-18" [ref=e255]
+      - generic "0 contributions on 2025-10-19" [ref=e256]
+      - generic "0 contributions on 2025-10-20" [ref=e257]
+      - generic "4 contributions on 2025-10-21" [ref=e258]:
+        - img [ref=e259]
+      - generic "0 contributions on 2025-10-22" [ref=e261]
+      - generic "6 contributions on 2025-10-23" [ref=e262]:
+        - img [ref=e263]
+      - generic "3 contributions on 2025-10-24" [ref=e265]:
+        - img [ref=e266]
+      - generic "0 contributions on 2025-10-25" [ref=e267]
+      - generic "1 contribution on 2025-10-26" [ref=e268]:
+        - img [ref=e269]
+      - generic "0 contributions on 2025-10-27" [ref=e270]
+      - generic "0 contributions on 2025-10-28" [ref=e271]
+      - generic "0 contributions on 2025-10-29" [ref=e272]
+      - generic "0 contributions on 2025-10-30" [ref=e273]
+      - generic "0 contributions on 2025-10-31" [ref=e274]
+      - generic "0 contributions on 2025-11-01" [ref=e275]
+      - generic "0 contributions on 2025-11-02" [ref=e276]
+      - generic "0 contributions on 2025-11-03" [ref=e277]
+      - generic "0 contributions on 2025-11-04" [ref=e278]
+      - generic "1 contribution on 2025-11-05" [ref=e279]:
+        - img [ref=e280]
+      - generic "0 contributions on 2025-11-06" [ref=e281]
+      - generic "0 contributions on 2025-11-07" [ref=e282]
+      - generic "0 contributions on 2025-11-08" [ref=e283]
+      - generic "0 contributions on 2025-11-09" [ref=e284]
+      - generic "0 contributions on 2025-11-10" [ref=e285]
+      - generic "0 contributions on 2025-11-11" [ref=e286]
+      - generic "0 contributions on 2025-11-12" [ref=e287]
+      - generic "0 contributions on 2025-11-13" [ref=e288]
+      - generic "0 contributions on 2025-11-14" [ref=e289]
+      - generic "0 contributions on 2025-11-15" [ref=e290]
+      - generic "0 contributions on 2025-11-16" [ref=e291]
+      - generic "0 contributions on 2025-11-17" [ref=e292]
+      - generic "0 contributions on 2025-11-18" [ref=e293]
+      - generic "0 contributions on 2025-11-19" [ref=e294]
+      - generic "0 contributions on 2025-11-20" [ref=e295]
+      - generic "0 contributions on 2025-11-21" [ref=e296]
+      - generic "0 contributions on 2025-11-22" [ref=e297]
+      - generic "0 contributions on 2025-11-23" [ref=e298]
+      - generic "0 contributions on 2025-11-24" [ref=e299]
+      - generic "0 contributions on 2025-11-25" [ref=e300]
+      - generic "0 contributions on 2025-11-26" [ref=e301]
+      - generic "0 contributions on 2025-11-27" [ref=e302]
+      - generic "0 contributions on 2025-11-28" [ref=e303]
+      - generic "0 contributions on 2025-11-29" [ref=e304]
+      - generic "0 contributions on 2025-11-30" [ref=e305]
+      - generic "0 contributions on 2025-12-01" [ref=e306]
+      - generic "0 contributions on 2025-12-02" [ref=e307]
+      - generic "0 contributions on 2025-12-03" [ref=e308]
+      - generic "0 contributions on 2025-12-04" [ref=e309]
+      - generic "0 contributions on 2025-12-05" [ref=e310]
+      - generic "0 contributions on 2025-12-06" [ref=e311]
+      - generic "0 contributions on 2025-12-07" [ref=e312]
+      - generic "0 contributions on 2025-12-08" [ref=e313]
+      - generic "0 contributions on 2025-12-09" [ref=e314]
+      - generic "0 contributions on 2025-12-10" [ref=e315]
+      - generic "0 contributions on 2025-12-11" [ref=e316]
+      - generic "0 contributions on 2025-12-12" [ref=e317]
+      - generic "0 contributions on 2025-12-13" [ref=e318]
+      - generic "0 contributions on 2025-12-14" [ref=e319]
+      - generic "0 contributions on 2025-12-15" [ref=e320]
+      - generic "0 contributions on 2025-12-16" [ref=e321]
+      - generic "0 contributions on 2025-12-17" [ref=e322]
+      - generic "0 contributions on 2025-12-18" [ref=e323]
+      - generic "0 contributions on 2025-12-19" [ref=e324]
+      - generic "0 contributions on 2025-12-20" [ref=e325]
+      - generic "0 contributions on 2025-12-21" [ref=e326]
+      - generic "0 contributions on 2025-12-22" [ref=e327]
+      - generic "0 contributions on 2025-12-23" [ref=e328]
+      - generic "0 contributions on 2025-12-24" [ref=e329]
+      - generic "0 contributions on 2025-12-25" [ref=e330]
+      - generic "0 contributions on 2025-12-26" [ref=e331]
+      - generic "0 contributions on 2025-12-27" [ref=e332]
+      - generic "0 contributions on 2025-12-28" [ref=e333]
+      - generic "0 contributions on 2025-12-29" [ref=e334]
+      - generic "0 contributions on 2025-12-30" [ref=e335]
+      - generic "0 contributions on 2025-12-31" [ref=e336]
+      - generic "0 contributions on 2026-01-01" [ref=e337]
+      - generic "0 contributions on 2026-01-02" [ref=e338]
+      - generic "0 contributions on 2026-01-03" [ref=e339]
+      - generic "0 contributions on 2026-01-04" [ref=e340]
+      - generic "0 contributions on 2026-01-05" [ref=e341]
+      - generic "0 contributions on 2026-01-06" [ref=e342]
+      - generic "0 contributions on 2026-01-07" [ref=e343]
+      - generic "0 contributions on 2026-01-08" [ref=e344]
+      - generic "0 contributions on 2026-01-09" [ref=e345]
+      - generic "0 contributions on 2026-01-10" [ref=e346]
+      - generic "0 contributions on 2026-01-11" [ref=e347]
+      - generic "0 contributions on 2026-01-12" [ref=e348]
+      - generic "0 contributions on 2026-01-13" [ref=e349]
+      - generic "0 contributions on 2026-01-14" [ref=e350]
+      - generic "0 contributions on 2026-01-15" [ref=e351]
+      - generic "0 contributions on 2026-01-16" [ref=e352]
+      - generic "0 contributions on 2026-01-17" [ref=e353]
+      - generic "0 contributions on 2026-01-18" [ref=e354]
+      - generic "0 contributions on 2026-01-19" [ref=e355]
+      - generic "0 contributions on 2026-01-20" [ref=e356]
+      - generic "0 contributions on 2026-01-21" [ref=e357]
+      - generic "0 contributions on 2026-01-22" [ref=e358]
+      - generic "2 contributions on 2026-01-23" [ref=e359]:
+        - img [ref=e360]
+      - generic "0 contributions on 2026-01-24" [ref=e361]
+      - generic "0 contributions on 2026-01-25" [ref=e362]
+      - generic "0 contributions on 2026-01-26" [ref=e363]
+      - generic "0 contributions on 2026-01-27" [ref=e364]
+      - generic "0 contributions on 2026-01-28" [ref=e365]
+      - generic "0 contributions on 2026-01-29" [ref=e366]
+      - generic "0 contributions on 2026-01-30" [ref=e367]
+      - generic "0 contributions on 2026-01-31" [ref=e368]
+      - generic "1 contribution on 2026-02-01" [ref=e369]:
+        - img [ref=e370]
+      - generic "0 contributions on 2026-02-02" [ref=e371]
+      - generic "0 contributions on 2026-02-03" [ref=e372]
+      - generic "0 contributions on 2026-02-04" [ref=e373]
+      - generic "0 contributions on 2026-02-05" [ref=e374]
+      - generic "0 contributions on 2026-02-06" [ref=e375]
+      - generic "0 contributions on 2026-02-07" [ref=e376]
+      - generic "0 contributions on 2026-02-08" [ref=e377]
+      - generic "0 contributions on 2026-02-09" [ref=e378]
+      - generic "0 contributions on 2026-02-10" [ref=e379]
+      - generic "0 contributions on 2026-02-11" [ref=e380]
+      - generic "0 contributions on 2026-02-12" [ref=e381]
+      - generic "0 contributions on 2026-02-13" [ref=e382]
+      - generic "0 contributions on 2026-02-14" [ref=e383]
+      - generic "0 contributions on 2026-02-15" [ref=e384]
+      - generic "0 contributions on 2026-02-16" [ref=e385]
+      - generic "0 contributions on 2026-02-17" [ref=e386]
+      - generic "0 contributions on 2026-02-18" [ref=e387]
+      - generic "0 contributions on 2026-02-19" [ref=e388]
+      - generic "0 contributions on 2026-02-20" [ref=e389]
+      - generic "0 contributions on 2026-02-21" [ref=e390]
+      - generic "0 contributions on 2026-02-22" [ref=e391]
+      - generic "0 contributions on 2026-02-23" [ref=e392]
+      - generic "0 contributions on 2026-02-24" [ref=e393]
+      - generic "0 contributions on 2026-02-25" [ref=e394]
+      - generic "0 contributions on 2026-02-26" [ref=e395]
+      - generic "0 contributions on 2026-02-27" [ref=e396]
+      - generic "0 contributions on 2026-02-28" [ref=e397]
+      - generic "0 contributions on 2026-03-01" [ref=e398]
+      - generic "0 contributions on 2026-03-02" [ref=e399]
+      - generic "0 contributions on 2026-03-03" [ref=e400]
+      - generic "0 contributions on 2026-03-04" [ref=e401]
+      - generic "0 contributions on 2026-03-05" [ref=e402]
+      - generic "1 contribution on 2026-03-06" [ref=e403]:
+        - img [ref=e404]
+      - generic "1 contribution on 2026-03-07" [ref=e405]:
+        - img [ref=e406]
+      - generic "0 contributions on 2026-03-08" [ref=e407]
+      - generic "0 contributions on 2026-03-09" [ref=e408]
+      - generic "0 contributions on 2026-03-10" [ref=e409]
+      - generic "0 contributions on 2026-03-11" [ref=e410]
+      - generic "0 contributions on 2026-03-12" [ref=e411]
+      - generic "4 contributions on 2026-03-13" [ref=e412]:
+        - img [ref=e413]
+      - generic "0 contributions on 2026-03-14" [ref=e415]
+      - generic "0 contributions on 2026-03-15" [ref=e416]
+      - generic "0 contributions on 2026-03-16" [ref=e417]
+      - generic "0 contributions on 2026-03-17" [ref=e418]
+      - generic "0 contributions on 2026-03-18" [ref=e419]
+      - generic "0 contributions on 2026-03-19" [ref=e420]
+      - generic "2 contributions on 2026-03-20" [ref=e421]:
+        - img [ref=e422]
+      - generic "0 contributions on 2026-03-21" [ref=e423]
+      - generic "0 contributions on 2026-03-22" [ref=e424]
+      - generic "15 contributions on 2026-03-23" [ref=e425]:
+        - img [ref=e426]
+      - generic "1 contribution on 2026-03-24" [ref=e428]:
+        - img [ref=e429]
+      - generic "4 contributions on 2026-03-25" [ref=e430]:
+        - img [ref=e431]
+      - generic "0 contributions on 2026-03-26" [ref=e433]
+      - generic "0 contributions on 2026-03-27" [ref=e434]
+      - generic "0 contributions on 2026-03-28" [ref=e435]
+      - generic "0 contributions on 2026-03-29" [ref=e436]
+      - generic "0 contributions on 2026-03-30" [ref=e437]
+      - generic "0 contributions on 2026-03-31" [ref=e438]
+      - generic "0 contributions on 2026-04-01" [ref=e439]
+      - generic "0 contributions on 2026-04-02" [ref=e440]
+      - generic "4 contributions on 2026-04-03" [ref=e441]:
+        - img [ref=e442]
+      - generic "0 contributions on 2026-04-04" [ref=e444]
+      - generic "0 contributions on 2026-04-05" [ref=e445]
+      - generic "0 contributions on 2026-04-06" [ref=e446]
+      - generic "0 contributions on 2026-04-07" [ref=e447]
+      - generic "13 contributions on 2026-04-08" [ref=e448]:
+        - img [ref=e449]
+      - generic "2 contributions on 2026-04-09" [ref=e451]:
+        - img [ref=e452]
+      - generic "4 contributions on 2026-04-10" [ref=e453]:
+        - img [ref=e454]
+      - generic "0 contributions on 2026-04-11" [ref=e456]
+      - generic "0 contributions on 2026-04-12" [ref=e457]
+      - generic "0 contributions on 2026-04-13" [ref=e458]
+      - generic "0 contributions on 2026-04-14" [ref=e459]
+      - generic "1 contribution on 2026-04-15" [ref=e460]:
+        - img [ref=e461]
+      - generic "0 contributions on 2026-04-16" [ref=e462]
+      - generic "0 contributions on 2026-04-17" [ref=e463]
+      - generic "0 contributions on 2026-04-18" [ref=e464]
+      - generic "0 contributions on 2026-04-19" [ref=e465]
+      - generic "0 contributions on 2026-04-20" [ref=e466]
+      - generic "0 contributions on 2026-04-21" [ref=e467]
+      - generic "0 contributions on 2026-04-22" [ref=e468]
+      - generic "0 contributions on 2026-04-23" [ref=e469]
+      - generic "0 contributions on 2026-04-24" [ref=e470]
+      - generic "0 contributions on 2026-04-25" [ref=e471]
+      - generic "0 contributions on 2026-04-26" [ref=e472]
+      - generic "0 contributions on 2026-04-27" [ref=e473]
+      - generic "0 contributions on 2026-04-28" [ref=e474]
+      - generic "0 contributions on 2026-04-29" [ref=e475]
+      - generic "0 contributions on 2026-04-30" [ref=e476]
+      - generic "0 contributions on 2026-05-01" [ref=e477]
+      - generic "0 contributions on 2026-05-02" [ref=e478]
+      - generic "0 contributions on 2026-05-03" [ref=e479]
+      - generic "0 contributions on 2026-05-04" [ref=e480]
+      - generic "0 contributions on 2026-05-05" [ref=e481]
+      - generic "0 contributions on 2026-05-06" [ref=e482]
+      - generic "0 contributions on 2026-05-07" [ref=e483]
+      - generic "0 contributions on 2026-05-08" [ref=e484]
+      - generic "0 contributions on 2026-05-09" [ref=e485]
+      - generic "0 contributions on 2026-05-10" [ref=e486]
+      - generic "0 contributions on 2026-05-11" [ref=e487]
+      - generic "0 contributions on 2026-05-12" [ref=e488]
+      - generic "0 contributions on 2026-05-13" [ref=e489]
+      - generic "0 contributions on 2026-05-14" [ref=e490]
+      - generic "0 contributions on 2026-05-15" [ref=e491]
+      - generic "0 contributions on 2026-05-16" [ref=e492]
+      - generic "0 contributions on 2026-05-17" [ref=e493]
+      - generic "0 contributions on 2026-05-18" [ref=e494]
+      - generic "0 contributions on 2026-05-19" [ref=e495]
+      - generic "0 contributions on 2026-05-20" [ref=e496]
+      - generic "0 contributions on 2026-05-21" [ref=e497]
+      - generic "0 contributions on 2026-05-22" [ref=e498]
+      - generic "0 contributions on 2026-05-23" [ref=e499]
+      - generic "0 contributions on 2026-05-24" [ref=e500]
+      - generic "0 contributions on 2026-05-25" [ref=e501]
+      - generic "0 contributions on 2026-05-26" [ref=e502]
+      - generic "0 contributions on 2026-05-27" [ref=e503]
+      - generic "0 contributions on 2026-05-28" [ref=e504]
+      - generic "0 contributions on 2026-05-29" [ref=e505]
+      - generic "0 contributions on 2026-05-30" [ref=e506]
+      - generic "0 contributions on 2026-05-31" [ref=e507]
+      - generic "0 contributions on 2026-06-01" [ref=e508]
+      - generic "0 contributions on 2026-06-02" [ref=e509]
+      - generic "0 contributions on 2026-06-03" [ref=e510]
+      - generic "0 contributions on 2026-06-04" [ref=e511]
+      - generic "0 contributions on 2026-06-05" [ref=e512]
+      - generic "0 contributions on 2026-06-06" [ref=e513]
+      - generic "0 contributions on 2026-06-07" [ref=e514]
+      - generic "0 contributions on 2026-06-08" [ref=e515]
+      - generic "0 contributions on 2026-06-09" [ref=e516]
+      - generic "0 contributions on 2026-06-10" [ref=e517]
+      - generic "0 contributions on 2026-06-11" [ref=e518]
+      - generic "0 contributions on 2026-06-12" [ref=e519]
+      - generic "0 contributions on 2026-06-13" [ref=e520]
+      - generic "0 contributions on 2026-06-14" [ref=e521]
+      - generic "0 contributions on 2026-06-15" [ref=e522]
+      - generic "5 contributions on 2026-06-16" [ref=e523]:
+        - img [ref=e524]
+      - generic "8 contributions on 2026-06-17" [ref=e526]:
+        - img [ref=e527]
+      - generic "4 contributions on 2026-06-18" [ref=e529]:
+        - img [ref=e530]
+      - generic "12 contributions on 2026-06-19" [ref=e532]:
+        - img [ref=e533]
+      - generic "1 contribution on 2026-06-20" [ref=e535]:
+        - img [ref=e536]
+      - generic "1 contribution on 2026-06-21" [ref=e537]:
+        - img [ref=e538]
+      - generic "0 contributions on 2026-06-22" [ref=e539]
+      - generic "0 contributions on 2026-06-23" [ref=e540]
+      - generic "0 contributions on 2026-06-24" [ref=e541]
+      - generic "5 contributions on 2026-06-25" [ref=e542]:
+        - img [ref=e543]
+      - generic "2 contributions on 2026-06-26" [ref=e545]:
+        - img [ref=e546]
+      - generic "0 contributions on 2026-06-27" [ref=e547]
+      - generic "0 contributions on 2026-06-28" [ref=e548]
+      - generic "0 contributions on 2026-06-29" [ref=e549]
+      - generic "3 contributions on 2026-06-30" [ref=e550]:
+        - img [ref=e551]
+      - generic "6 contributions on 2026-07-01" [ref=e552]:
+        - img [ref=e553]
+      - generic "8 contributions on 2026-07-02" [ref=e555]:
+        - img [ref=e556]
+      - generic "0 contributions on 2026-07-03" [ref=e558]
+      - generic "0 contributions on 2026-07-04" [ref=e559]
+      - generic "1 contribution on 2026-07-05" [ref=e560]:
+        - img [ref=e561]
+      - generic "1 contribution on 2026-07-06" [ref=e562]:
+        - img [ref=e563]
+      - generic "11 contributions on 2026-07-07" [ref=e564]:
+        - img [ref=e565]
+      - generic "1 contribution on 2026-07-08" [ref=e567]:
+        - img [ref=e568]
+      - generic "0 contributions on 2026-07-09" [ref=e569]
+      - generic "0 contributions on 2026-07-10" [ref=e570]
+      - generic "0 contributions on 2026-07-11" [ref=e571]
+      - generic "0 contributions on 2026-07-12" [ref=e572]
+      - generic "0 contributions on 2026-07-13" [ref=e573]
+  - generic [ref=e574]:
+    - heading "Skills" [level=2] [ref=e575]
+    - generic [ref=e576]:
+      - region "Skills, presented as a crate of records" [ref=e577]:
+        - button "Previous record" [ref=e578] [cursor=pointer]: ❮
+        - generic [ref=e579]:
+          - figure [ref=e580]:
+            - generic [ref=e583]: Languages
+            - generic [ref=e584]:
+              - generic [ref=e585]:
+                - generic [ref=e586]: SIDE A
+                - generic [ref=e587]: Languages
+                - heading "Mother Tongues" [level=3] [ref=e588]
+                - generic [ref=e589]: Kameron Benjamin
+              - list [ref=e590]:
+                - listitem [ref=e591]:
+                  - generic [ref=e592]: Python
+                  - generic [ref=e593]: heavy rotation
+                - listitem [ref=e594]:
+                  - generic [ref=e595]: JavaScript / TypeScript
+                - listitem [ref=e596]:
+                  - generic [ref=e597]: Java
+                - listitem [ref=e598]:
+                  - generic [ref=e599]: C++
+                  - generic [ref=e600]: now teaching it
+                - listitem [ref=e601]:
+                  - generic [ref=e602]: SQL
+                - listitem [ref=e603]:
+                  - generic [ref=e604]: HTML & CSS
+          - figure [ref=e605] [cursor=pointer]:
+            - generic [ref=e608]: Frontend
+            - generic [ref=e609]:
+              - generic [ref=e610]:
+                - generic [ref=e611]: SIDE B
+                - generic [ref=e612]: Frontend
+                - heading [level=3] [ref=e613]: Front of House
+                - generic [ref=e614]: Kameron Benjamin
+              - list [ref=e615]:
+                - listitem [ref=e616]:
+                  - generic [ref=e617]: React
+                - listitem [ref=e618]:
+                  - generic [ref=e619]: Next.js
+                  - generic [ref=e620]: CubeCoach
+                - listitem [ref=e621]:
+                  - generic [ref=e622]: React Native / Expo
+                  - generic [ref=e623]: Green Guardian
+                - listitem [ref=e624]:
+                  - generic [ref=e625]: Three.js
+                  - generic [ref=e626]: CubeCoach
+                - listitem [ref=e627]:
+                  - generic [ref=e628]: Tailwind CSS
+          - figure:
+            - generic:
+              - generic:
+                - generic: Backend & Cloud
+            - generic:
+              - generic:
+                - generic: SIDE C
+                - generic: Backend & Cloud
+                - heading [level=3]: Boiler Room
+                - generic: Kameron Benjamin
+              - list:
+                - listitem:
+                  - generic: Node.js
+                - listitem:
+                  - generic: FastAPI
+                - listitem:
+                  - generic: PostgreSQL
+                - listitem:
+                  - generic: Docker
+                - listitem:
+                  - generic: AWS
+                  - generic: Lambda · EC2 · CloudFront
+                - listitem:
+                  - generic: GitHub Actions
+                  - generic: CI/CD
+          - figure [ref=e629] [cursor=pointer]:
+            - generic [ref=e632]: AI / ML
+            - generic [ref=e633]:
+              - generic [ref=e634]:
+                - generic [ref=e635]: SIDE D
+                - generic [ref=e636]: AI / ML
+                - heading [level=3] [ref=e637]: Thinking Machines
+                - generic [ref=e638]: Kameron Benjamin
+              - list [ref=e639]:
+                - listitem [ref=e640]:
+                  - generic [ref=e641]: PyTorch
+                  - generic [ref=e642]: Green Guardian
+                - listitem [ref=e643]:
+                  - generic [ref=e644]: Claude API
+                  - generic [ref=e645]: CubeCoach
+                - listitem [ref=e646]:
+                  - generic [ref=e647]: LLM Pipelines
+                  - generic [ref=e648]: Outamation
+                - listitem [ref=e649]:
+                  - generic [ref=e650]: Agentic AI
+                - listitem [ref=e651]:
+                  - generic [ref=e652]: Prompt Engineering
+        - button "Next record" [ref=e653] [cursor=pointer]: ❯
+      - generic [ref=e654]:
+        - button "Show Languages record" [ref=e655] [cursor=pointer]
+        - button "Show Frontend record" [ref=e656] [cursor=pointer]
+        - button "Show Backend & Cloud record" [ref=e657] [cursor=pointer]
+        - button "Show AI / ML record" [ref=e658] [cursor=pointer]
+  - generic [ref=e659]:
+    - heading "Let's Grow Something" [level=2] [ref=e660]
+    - paragraph [ref=e661]: I like to build things that help people grow, this page is no different. Reach out however makes sense.
+    - generic [ref=e662]:
+      - link "🌱 Seed Email Me kameron1.benjamin@famu.edu" [ref=e663] [cursor=pointer]:
+        - /url: mailto:kameron1.benjamin@famu.edu
+        - generic [ref=e664]: 🌱 Seed
+        - img [ref=e665]
+        - generic [ref=e667]:
+          - generic [ref=e668]: Email Me
+          - text: kameron1.benjamin@famu.edu
+        - generic [ref=e669]: →
+      - link "🌿 Sprout GitHub Code, commits, and works in progress on GitHub" [ref=e670] [cursor=pointer]:
+        - /url: https://github.com/kameron-ctrl/
+        - generic [ref=e671]: 🌿 Sprout
+        - img [ref=e672]
+        - generic [ref=e674]:
+          - generic [ref=e675]: GitHub
+          - text: Code, commits, and works in progress on GitHub
+        - generic [ref=e676]: →
+      - link "🌸 Bloom LinkedIn The professional side, on LinkedIn" [ref=e677] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/kameronbenjamin/
+        - generic [ref=e678]: 🌸 Bloom
+        - img [ref=e679]
+        - generic [ref=e682]:
+          - generic [ref=e683]: LinkedIn
+          - text: The professional side, on LinkedIn
+        - generic [ref=e684]: →
+      - link "🍂 Harvest Resume Download my resume (PDF)" [ref=e685] [cursor=pointer]:
+        - /url: resume.pdf
+        - generic [ref=e686]: 🍂 Harvest
+        - img [ref=e687]
+        - generic [ref=e689]:
+          - generic [ref=e690]: Resume
+          - text: Download my resume (PDF)
+        - generic [ref=e691]: →
+  - contentinfo [ref=e692]:
+    - paragraph [ref=e693]: Built with GitHub Copilot, GitHub Pages & a cool guy named Kameron · 2026
